@@ -29,3 +29,7 @@ An employee reports receiving an email claiming to be from Microsoft. The messag
 ## Investigation Status
 
 **Completed**
+
+## Evidence
+
+Screenshots and supporting evidence are located in the "evidence/" directory.
