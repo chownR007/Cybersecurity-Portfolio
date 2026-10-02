@@ -247,3 +247,45 @@ Analysts can compare sender information, domains, timestamps, and message identi
 Email header information was successfully identified from the SMTP traffic and documented as part of the investigation.
 
 Further analysis should correlate the header information with the SMTP conversation and other available packet evidence.
+
+## Finding 7 — SMTP Sender and Recipient Information
+
+### Observation
+
+SMTP request traffic was examined to identify the email envelope information.
+
+A `MAIL FROM` command was identified in the packet capture.
+
+A `RCPT TO` command was also reviewed to identify the intended recipient.
+
+### Analysis
+
+SMTP envelope information provides useful evidence about the communication between mail systems.
+
+The `MAIL FROM` command identifies the envelope sender, while `RCPT TO` identifies the intended recipient.
+
+This information can be correlated with email headers and other network evidence during an investigation.
+
+### Security Relevance
+
+SMTP sender and recipient information can help analysts:
+
+- Trace email communication
+- Identify unexpected senders
+- Identify intended recipients
+- Correlate messages with security alerts
+- Build an incident timeline
+
+### Evidence
+
+- `smtp-sender.png`
+
+### Privacy Note
+
+Email addresses from the training capture were treated as investigation data and were not reproduced in this public portfolio documentation.
+
+### Analyst Assessment
+
+SMTP envelope information was successfully identified and documented.
+
+The sender and recipient information should be correlated with the available email-header and message-content evidence before drawing additional conclusions.
