@@ -48,7 +48,14 @@ Incident documentation
 Security recommendations
 Project: 01-phishing-investigation
 
+### 1. Phishing Email Investigation
 
+**Type:** SOC / Blue Team  
+**Skills:** Phishing Analysis, IOC Identification, URL Analysis, Incident Documentation, MITRE ATT&CK
+
+Investigated a simulated phishing email impersonating Microsoft. Identified suspicious sender information, a lookalike domain, a suspicious URL, social-engineering techniques, and documented the investigation from initial detection through final assessment.
+
+**Project:** [View Phishing Investigation](./01-phishing-investigation/)
 
 🌐 Network Traffic Analysis
 
