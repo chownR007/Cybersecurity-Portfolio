@@ -133,3 +133,33 @@ Because DNS traffic was not present in this capture, no DNS-based conclusions ar
 No malicious activity is inferred from the absence of DNS traffic.
 
 Further investigation will focus on protocols and evidence that are actually present in the capture.
+
+## Finding 4 — HTTP Traffic Not Observed
+
+### Observation
+
+Wireshark was used to search the packet capture for HTTP traffic using the following display filter:
+
+`http`
+
+No packets were returned by the filter.
+
+### Analysis
+
+The provided packet capture does not appear to contain HTTP traffic that can be analyzed during this investigation.
+
+Because HTTP traffic was not observed, there is no HTTP request or response evidence available from this dataset.
+
+### Security Relevance
+
+HTTP analysis can provide useful information during network investigations, including requested resources, HTTP methods, hosts, user-agents, and server responses.
+
+However, conclusions should only be made from traffic actually present in the capture.
+
+### Analyst Assessment
+
+**Result:** HTTP traffic not observed in the provided PCAP.
+
+No malicious activity is inferred from the absence of HTTP traffic.
+
+The investigation will continue using protocols and evidence present in the capture.
