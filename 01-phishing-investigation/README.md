@@ -28,4 +28,4 @@ An employee reports receiving an email claiming to be from Microsoft. The messag
 
 ## Investigation Status
 
-**In Progress**
+**Completed**
