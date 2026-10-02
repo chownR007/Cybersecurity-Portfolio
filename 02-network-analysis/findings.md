@@ -98,3 +98,38 @@ Identifying communicating hosts is an important step in network investigations b
 The IPv4 endpoint information has been documented for further analysis.
 
 No malicious activity is concluded from endpoint statistics alone. Additional protocol and traffic analysis is required.
+
+## Finding 3 — DNS Traffic Not Observed
+
+### Observation
+
+Wireshark was used to search the packet capture for DNS traffic.
+
+The following display filters were tested:
+
+- `dns`
+- `dns.qry.name`
+
+The packet capture did not return DNS traffic using these filters.
+
+Wireshark's Protocol Hierarchy was also reviewed, and DNS was not listed among the protocols present in the capture.
+
+### Analysis
+
+The available packet capture does not appear to contain DNS traffic that can be analyzed as part of this investigation.
+
+This limits the ability to investigate domain-resolution activity within this specific dataset.
+
+### Security Relevance
+
+DNS analysis can be useful during security investigations because analysts may use DNS activity to identify suspicious domains, command-and-control infrastructure, or unusual resolution patterns.
+
+Because DNS traffic was not present in this capture, no DNS-based conclusions are being made.
+
+### Analyst Assessment
+
+**Result:** DNS traffic not observed in the provided PCAP.
+
+No malicious activity is inferred from the absence of DNS traffic.
+
+Further investigation will focus on protocols and evidence that are actually present in the capture.
