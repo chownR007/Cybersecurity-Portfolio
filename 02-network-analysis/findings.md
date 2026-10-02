@@ -163,3 +163,45 @@ However, conclusions should only be made from traffic actually present in the ca
 No malicious activity is inferred from the absence of HTTP traffic.
 
 The investigation will continue using protocols and evidence present in the capture.
+
+## Finding 5 — Protocol Hierarchy
+
+### Observation
+
+Wireshark's Protocol Hierarchy was reviewed to identify the protocols represented in the packet capture.
+
+The following protocols were observed:
+
+- Frame
+- Ethernet
+- Internet Protocol Version 4 (IPv4)
+- Transmission Control Protocol (TCP)
+- Simple Mail Transfer Protocol (SMTP)
+- Internet Message Format (IMF)
+
+### Analysis
+
+The protocol hierarchy indicates that the capture contains network traffic associated with email communication.
+
+SMTP provides the transport mechanism for sending email, while Internet Message Format contains the structure and content of email messages.
+
+IPv4 and TCP provide the underlying network and transport communication.
+
+### Security Relevance
+
+Email traffic can provide valuable evidence during security investigations.
+
+Analyzing SMTP and email-message traffic can help an analyst investigate:
+
+- Suspicious senders
+- Email recipients
+- Message subjects
+- Email content
+- Potential malicious attachments
+- Suspicious communication patterns
+
+### Analyst Assessment
+
+The protocol hierarchy confirms that the provided PCAP is primarily focused on email-related network traffic.
+
+Further investigation will focus on the SMTP and Internet Message Format data available in the capture.
