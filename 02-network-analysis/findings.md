@@ -205,3 +205,45 @@ Analyzing SMTP and email-message traffic can help an analyst investigate:
 The protocol hierarchy confirms that the provided PCAP is primarily focused on email-related network traffic.
 
 Further investigation will focus on the SMTP and Internet Message Format data available in the capture.
+
+## Finding 6 — Email Header Information Identified
+
+### Observation
+
+SMTP traffic was examined to identify email header information within the captured communication.
+
+The investigation reviewed available message metadata, including:
+
+- Sender information
+- Recipient information
+- Subject
+- Date information
+- Message-ID
+
+### Analysis
+
+Email headers provide important context during a security investigation.
+
+Header information can help analysts establish:
+
+- Who sent a message
+- Who received it
+- When the message was sent
+- How the message can be uniquely identified
+- Which email communication should be examined further
+
+### Security Relevance
+
+Email header analysis is commonly used during phishing and email-security investigations.
+
+Analysts can compare sender information, domains, timestamps, and message identifiers against other available evidence.
+
+### Evidence
+
+- `email-headers.png`
+
+### Analyst Assessment
+
+Email header information was successfully identified from the SMTP traffic and documented as part of the investigation.
+
+Further analysis should correlate the header information with the SMTP conversation and other available packet evidence.
