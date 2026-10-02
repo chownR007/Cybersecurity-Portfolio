@@ -1,0 +1,39 @@
+SIMULATED PHISHING EMAIL
+========================
+
+This email is fictional and created for cybersecurity training.
+
+From:
+Microsoft Account Security <security-alert@micr0soft-security.example>
+
+To:
+employee@example.com
+
+Date:
+October 1, 2026 09:14 AM
+
+Subject:
+URGENT: Your Microsoft Account Will Be Suspended
+
+------------------------------------------------------------
+
+Dear User,
+
+We detected unusual activity associated with your Microsoft
+account.
+
+For your protection, your account will be suspended within
+24 hours unless you verify your account immediately.
+
+Please verify your account using the link below:
+
+http://micr0soft-security.example/verify
+
+Failure to complete verification may result in permanent
+account suspension.
+
+Microsoft Account Security Team
+
+------------------------------------------------------------
+
+END OF EMAIL
