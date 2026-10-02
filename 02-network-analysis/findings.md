@@ -54,8 +54,47 @@ Additional analysis is required before determining whether any activity is malic
 
 Continue analyzing:
 
+
 - Source and destination hosts
 - DNS activity
 - Network protocols
 - TCP conversations
 - Potential indicators of compromise
+## Finding 2 — Network Endpoints Identified
+
+### Observation
+
+Wireshark's IPv4 Endpoints statistics were used to identify hosts communicating within the packet capture.
+
+The endpoint information provides visibility into the systems involved in the captured network activity.
+
+### Evidence
+
+The following information was reviewed:
+
+- IPv4 source addresses
+- IPv4 destination addresses
+- Packet counts
+- Byte counts
+- Transmitted packets
+- Received packets
+
+### Analysis
+
+Endpoint statistics help a security analyst establish which hosts participated in network communication and determine which systems generated or received the most traffic.
+
+This information can be used as a starting point for further investigation.
+
+### Security Relevance
+
+Identifying communicating hosts is an important step in network investigations because suspicious connections, unusual traffic volumes, or unexpected communication with external systems may provide additional indicators for investigation.
+
+### Evidence File
+
+- `ipv4-endpoints.png`
+
+### Analyst Assessment
+
+The IPv4 endpoint information has been documented for further analysis.
+
+No malicious activity is concluded from endpoint statistics alone. Additional protocol and traffic analysis is required.
