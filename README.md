@@ -171,6 +171,7 @@ Indicators of Compromise
 📚 Current Learning
 
 I am continuously developing my cybersecurity knowledge through hands-on labs, practical investigations, and security research.
+Currently finishing Google Cyber Security on coursera and preparing for CompTIA Security + 
 
 Current areas of focus:
 
